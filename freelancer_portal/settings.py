@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$=xb0+h0%xidd67z+ru1rsx(7ymtrq@q7x@j_i*3#-2r(-wo7o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['taarinirepo.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -124,3 +124,6 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CSRF_TRUSTED_ORIGINS = [
+    "https://taarinirepo.onrender.com"
+]
